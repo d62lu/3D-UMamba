@@ -16,10 +16,10 @@ Segmentation of point clouds is foundational to numerous remote sensing applicat
 The latest codes are tested on CUDA11.3 and above, PyTorch 1.10.1 and Python 3.9.
 
 ## Data Preparation
-Download alignment ModelNet (https://shapenet.cs.stanford.edu/media/modelnet40_normal_resampled.zip) and save in "data/modelnet40_normal_resampled/".
+Download DAELS (https://udayton.edu/engineering/research/centers/vision_lab/research/was_data_analysis_and_processing/dale.php) and save in "data/".
 
 ## Run
 ```
-python train_classification.py --use_normals --model pointnet2_cls_msg --log_dir pointnet2_cls_msg_github --learning_rate 0.01 --batch_size 16 --optimizer SGD --epoch 300 --process_data
+python train_DALES.py --model mamba_msg --log_dir 3dumamba --learning_rate 0.01 --batch_size 4 --optimizer SGD --epoch 120 --gpu 0 --npoint 8192 --weighted_loss True
 ```
 
