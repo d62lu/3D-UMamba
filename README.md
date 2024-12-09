@@ -14,6 +14,9 @@ Segmentation of point clouds is foundational to numerous remote sensing applicat
 
 ## Install
 The latest codes are tested on CUDA11.3 and above, PyTorch 1.10.1 and Python 3.9.
+For mamba installation, please refer to PointMamba (https://github.com/LMD0311/PointMamba)
+
+
 
 ## Data Preparation
 Download DAELS (https://udayton.edu/engineering/research/centers/vision_lab/research/was_data_analysis_and_processing/dale.php) and save in "data/".
