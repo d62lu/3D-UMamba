@@ -26,3 +26,6 @@ Download DAELS (https://udayton.edu/engineering/research/centers/vision_lab/rese
 python train_DALES.py --model mamba_msg --log_dir 3dumamba --learning_rate 0.01 --batch_size 4 --optimizer SGD --epoch 120 --gpu 0 --npoint 8192 --weighted_loss True
 ```
 
+## Acknowledgement
+
+We would like to express our sincere gratitude to PointMamba (https://github.com/LMD0311/PointMamba) and PVCNN (https://github.com/mit-han-lab/pvcnn/tree/master)  for their valuable work on, which has significantly contributed to the development of this project.
