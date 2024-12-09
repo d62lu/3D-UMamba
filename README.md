@@ -13,7 +13,7 @@ Segmentation of point clouds is foundational to numerous remote sensing applicat
 <img width="580" alt="1733765091194" src="https://github.com/user-attachments/assets/cee06ef3-7db0-40fe-b7bf-7df0fed2a27d">
 
 ## Install
-The latest codes are tested on CUDA10.1, PyTorch 1.6 and Python 3.8.
+The latest codes are tested on CUDA11.7, PyTorch 1.10.1 and Python 3.9.
 
 ## Data Preparation
 Download alignment ModelNet (https://shapenet.cs.stanford.edu/media/modelnet40_normal_resampled.zip) and save in "data/modelnet40_normal_resampled/".
