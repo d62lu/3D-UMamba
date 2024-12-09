@@ -24,12 +24,14 @@ Download DAELS (https://udayton.edu/engineering/research/centers/vision_lab/rese
 ## Run
 1. Data preprocessing
    Folder: data_prepare
+   
    ```
   python data_prepare_DALES.py
   python DALES_sample_generation
   ```
 
 2. Model Training
+
   ```
   python train_DALES.py --model mamba_msg --log_dir 3dumamba --learning_rate 0.01 --batch_size 4 --optimizer SGD --epoch 120 --gpu 0 --npoint 8192 --weighted_loss True
   ```
