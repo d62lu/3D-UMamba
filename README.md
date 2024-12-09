@@ -31,6 +31,8 @@ python DALES_sample_generation.py
 
 2. Model Training
 
+Saving the pretrained model () in log/dales_seg/3dumamba/checkpoints, to get better results.
+
 ```
 python train_DALES.py --model mamba_msg --log_dir 3dumamba --learning_rate 0.01 --batch_size 4 --optimizer SGD --epoch 120 --gpu 0 --npoint 8192 --weighted_loss True
 ```
