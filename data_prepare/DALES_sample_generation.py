@@ -165,7 +165,7 @@ for file_path in tqdm(file_paths):
             current_points = norm_and_surface_variance(current_points)
     
             current_points = np.expand_dims(current_points, axis=0)
-            current_points = coordinate_normalize(current_points) # nx, ny, nz, intensity, ax, ay, az, label # rx ry rz intensity ax ay az label
+            current_points = coordinate_normalize(current_points) # rx ry rz intensity ax ay az nx ny nz sv label
             #print('sample shape:', current_points.shape)
             data_npy.append(current_points)
         file_save_path = data_root + file_name + '.npy'
