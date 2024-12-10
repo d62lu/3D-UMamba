@@ -162,7 +162,7 @@ for file_path in tqdm(file_paths):
             current_points[:, 4:7] = selected_points[:, :3]
             current_points[:, 7] = selected_points[:, 4]
             
-            #current_points = norm_and_surface_variance(current_points)
+            current_points = norm_and_surface_variance(current_points)
     
             current_points = np.expand_dims(current_points, axis=0)
             current_points = coordinate_normalize(current_points) # nx, ny, nz, intensity, ax, ay, az, label # rx ry rz intensity ax ay az label
