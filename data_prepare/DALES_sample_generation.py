@@ -156,7 +156,7 @@ for file_path in tqdm(file_paths):
             selected_point_idxs = point_idxs[selected_point_idxs]
             selected_points = points[selected_point_idxs, :]
             
-            current_points = np.zeros((selected_point_idxs.size , 8))  # num_point * 5
+            current_points = np.zeros((selected_point_idxs.size , 11))  # num_point * 5
             
             current_points[:, :4] = selected_points[:, :4]
             current_points[:, 4:7] = selected_points[:, :3]
